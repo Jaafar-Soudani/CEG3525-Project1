@@ -13,7 +13,7 @@ export default function Page() {
     
 
   return (
-    <div>
+    <div className="w-11/12 mx-auto">
         <div className="flex flex-col mx-4 mt-5 gap-5">
             <div className="mx-auto text-center text-3xl font-bold">
                 Our Services

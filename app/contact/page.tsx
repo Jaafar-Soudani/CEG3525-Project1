@@ -36,7 +36,7 @@ export default function Page() {
 
           <div className="flex flex-row justify-between mx-auto px-5 gap-20 pt-4">
             <div className="flex flex-col gap-5">
-              <div className="flex flex-row text-center items-center  text-4xl">
+              <div className="flex flex-row text-center items-center  text-3xl">
                   <Image 
                     src="/phonetext.svg"
                     width={100}
@@ -47,7 +47,7 @@ export default function Page() {
                   +1 (555) 555 - 5555
               </div>
               
-              <div className="flex flex-row justify-center text-center items-center text-4xl">
+              <div className="flex flex-row justify-center text-center items-center text-3xl">
                   <Image 
                     src="/email.svg"
                     width={100}
@@ -59,7 +59,7 @@ export default function Page() {
               </div>
 
               
-              <div className="flex flex-row justify-left text-left items-center text-4xl">
+              <div className="flex flex-row justify-left text-left items-center text-3xl">
                   <Image 
                     src="/location.svg"
                     width={100}

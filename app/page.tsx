@@ -8,8 +8,8 @@ export default function Home() {
       <div className="flex flex-row gap-5">
         <div className="video-responsive">
           <iframe
-            width="853"
-            height="480"
+            width="700"
+            height="400"
             src={`https://www.youtube.com/embed/Yki3vGZpVSU`}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -19,22 +19,22 @@ export default function Home() {
 
         <div className="flex flex-col">
             <span className="text-3xl font-bold">Welcome to Gee & Gee LLP</span>
-            <span className="mt-2 ml-5 text-lg">
+            <span className="mt-2 ml-5 text-md">
               At Gee & Gee LLP, we are committed to delivering high-quality legal services to individuals and businesses alike. 
             </span>            
-            <span className="mt-2 ml-5 text-lg">
+            <span className="mt-2 ml-5 text-md">
               With years of experience in a wide range of practice areas, our team works tirelessly to ensure your legal needs are met with precision and care.            
             </span>
-            <span className="mt-2 ml-5 text-lg">
+            <span className="mt-2 ml-5 text-md">
               Whether you are facing complex litigation, need expert legal advice, or require representation in business matters, our attorneys are here to guide you every step of the way. 
             </span>
-            <span className="mt-2 ml-5 text-lg">
+            <span className="mt-2 ml-5 text-md">
               Watch the video to learn more about our firm, our values, and how we can help you achieve the best possible outcome for your case.
             </span>
         </div>
       </div>
 
-      <Link className="mt-10 py-4 px-2 text-center text-white mx-auto w-2/3 bg-gold text-5xl" href="/book">
+      <Link className="mt-10 py-4 px-2 text-center text-white mx-auto w-1/2 bg-gold text-3xl" href="/book">
             Book a Free Consultation
         </Link>
     </div>
