@@ -3,11 +3,11 @@ import Image from 'next/image'
 import React from 'react'
 
 type mainMenuItem  = {
-    link : String;
-    text : String;
+    link : string;
+    text : string;
 }
 
-export default function Menu({currentLink = ""}: {currentLink? : String }) {
+export default function Menu({currentLink = ""}: {currentLink? : string }) {
 
     const mainMenuItems : mainMenuItem[] = [
         {link: "/", text: "Home"},
@@ -39,7 +39,7 @@ export default function Menu({currentLink = ""}: {currentLink? : String }) {
                     else
                         bgcol = "bg-mblue"
                     return (
-                    <Link key={item.text.toString()} className={`flex justify-center text-center items-center text-white text-lg rounded rounded-lg ${bgcol} px-2 py-auto hover:bg-lblue`}
+                    <Link key={item.text} className={`flex justify-center text-center items-center text-white text-lg rounded rounded-lg ${bgcol} px-2 py-auto hover:bg-lblue`}
                         href={`${item.link}`}
                     >
                         {item.text}

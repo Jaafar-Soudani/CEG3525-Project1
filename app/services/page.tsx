@@ -1,7 +1,7 @@
 
 export default function Page() {
 
-    const services : {service: String, price: String}[] = [
+    const services : {service: string, price: string}[] = [
         { service: "Legal Consultation", price: "FREE" },
         { service: "Case Settlement", price: "20-40%" },
         { service: "Legal Research and Filing", price: "$2,500.00" },
@@ -25,7 +25,7 @@ export default function Page() {
                         Personal Injury
                     </div>
                     <div>
-                    At Gee & Gee LLP, we provide dedicated legal representation for individuals who have suffered injuries due to accidents, negligence, or misconduct. Our experienced attorneys work relentlessly to secure fair compensation for medical expenses, lost wages, pain and suffering, and more. Whether you've been injured in a car accident, slip and fall, or due to a defective product, we fight to hold responsible parties accountable and help you recover what you deserve. Let us guide you through the legal process with compassion and expertise, ensuring your rights are protected every step of the way. 
+                    At Gee & Gee LLP, we provide dedicated legal representation for individuals who have suffered injuries due to accidents, negligence, or misconduct. Our experienced attorneys work relentlessly to secure fair compensation for medical expenses, lost wages, pain and suffering, and more. Whether you have been injured in a car accident, slip and fall, or due to a defective product, we fight to hold responsible parties accountable and help you recover what you deserve. Let us guide you through the legal process with compassion and expertise, ensuring your rights are protected every step of the way. 
                     <ul className="ml-4 mt-2" style={{
                             listStyleType: "square",
                         }}>
@@ -57,7 +57,7 @@ export default function Page() {
                         Family Law
                     </div>
                     <div>
-                    At Gee & Gee LLP, we understand the sensitive nature of family law matters and offer compassionate, skilled representation in cases involving divorce, child custody, child support, spousal support, and more. Our team is dedicated to helping families navigate difficult situations with care, while always keeping your best interests at heart. Whether you're seeking to resolve a dispute or need legal guidance through a challenging life transition, we are here to provide the support and expertise you need to reach a fair and lasting solution.
+                    At Gee & Gee LLP, we understand the sensitive nature of family law matters and offer compassionate, skilled representation in cases involving divorce, child custody, child support, spousal support, and more. Our team is dedicated to helping families navigate difficult situations with care, while always keeping your best interests at heart. Whether you are seeking to resolve a dispute or need legal guidance through a challenging life transition, we are here to provide the support and expertise you need to reach a fair and lasting solution.
                     <ul className="ml-4 mt-2" style={{
                             listStyleType: "square",
                         }}>
@@ -74,9 +74,9 @@ export default function Page() {
             </div>
             <div className="mx-auto w-4/6 text-lg">
                 {
-                    services.map((service: {service: String, price: String}) => {
+                    services.map((service: {service: string, price: string}) => {
                         return (
-                        <div className="flex flex-row justify-between my-2 mx-auto">
+                        <div key={service.service} className="flex flex-row justify-between my-2 mx-auto">
                             <div className="w-9/12 bg-lgray py-3 px-2">{service.service}</div>
                             <div className="w-1/6 bg-lgray py-3 px-2 text-left">{service.price}</div>
                         </div>)

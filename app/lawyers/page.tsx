@@ -1,8 +1,7 @@
-import { Url } from "next/dist/shared/lib/router/router"
 import Image from 'next/image'
 export default function Page() {
 
-    const lawyers: {image: string, name:String, desc:String}[] = [
+    const lawyers: {image: string, name:string, desc:string}[] = [
         {
           image: "/lawyer6.webp",
           name: "Thurman Matthews",
@@ -48,7 +47,7 @@ export default function Page() {
                         src={lawyers[0].image}
                         width="300"
                         height="300"
-                        alt={lawyers[0].name.toString()}
+                        alt={lawyers[0].name}
                         style={{ objectFit: 'contain' }}
                         />
                         <div className="flex flex-col ml-2">
@@ -66,7 +65,7 @@ export default function Page() {
                         src={lawyers[3].image}
                         width="300"
                         height="300"
-                        alt={lawyers[3].name.toString()}
+                        alt={lawyers[3].name}
                         style={{ objectFit: 'contain' }}
                         />
                         <div className="flex flex-col mr-2">
@@ -86,7 +85,7 @@ export default function Page() {
                         src={lawyers[4].image}
                         width="300"
                         height="300"
-                        alt={lawyers[4].name.toString()}
+                        alt={lawyers[4].name}
                         style={{ objectFit: 'contain' }}
                         />
                         <div className="flex flex-col ml-2">
@@ -104,7 +103,7 @@ export default function Page() {
                         src={lawyers[1].image}
                         width="300"
                         height="300"
-                        alt={lawyers[1].name.toString()}
+                        alt={lawyers[1].name}
                         style={{ objectFit: 'contain' }}
                         />
                         <div className="flex flex-col mr-2">
@@ -125,7 +124,7 @@ export default function Page() {
                         src={lawyers[2].image}
                         width="300"
                         height="300"
-                        alt={lawyers[2].name.toString()}
+                        alt={lawyers[2].name}
                         style={{ objectFit: 'contain' }}
                         />
                         <div className="flex flex-col ml-2">
@@ -143,7 +142,7 @@ export default function Page() {
                         src={lawyers[5].image}
                         width="300"
                         height="300"
-                        alt={lawyers[5].name.toString()}
+                        alt={lawyers[5].name}
                         style={{ objectFit: 'contain' }}
                         />
                         <div className="flex flex-col mr-2">

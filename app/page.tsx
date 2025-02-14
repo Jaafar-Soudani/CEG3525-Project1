@@ -26,7 +26,7 @@ export default function Home() {
               With years of experience in a wide range of practice areas, our team works tirelessly to ensure your legal needs are met with precision and care.            
             </span>
             <span className="mt-2 ml-5 text-lg">
-              Whether you're facing complex litigation, need expert legal advice, or require representation in business matters, our attorneys are here to guide you every step of the way. 
+              Whether you are facing complex litigation, need expert legal advice, or require representation in business matters, our attorneys are here to guide you every step of the way. 
             </span>
             <span className="mt-2 ml-5 text-lg">
               Watch the video to learn more about our firm, our values, and how we can help you achieve the best possible outcome for your case.
