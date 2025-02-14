@@ -9,6 +9,12 @@ export default {
   theme: {
     extend: {
       colors: {
+        gold: "#C8A817", 
+        lblue: "#4169E1",
+        mblue: "#191970",
+        dblue: "#00274D",
+        lgray: "#D5D5D5",
+
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
