@@ -1,16 +1,22 @@
-
 export default function Page() {
 
-    const services : {service: string, price: string}[] = [
-        { service: "Legal Consultation", price: "FREE" },
-        { service: "Case Settlement", price: "20-40%" },
-        { service: "Legal Research and Filing", price: "$2,500.00" },
-        { service: "Divorce Filing", price: "$1,800.00" },
-        { service: "Child Custody Representation", price: "$3,000.00" },
-        { service: "Personal Injury Case Representation", price: "30-40%" },
-        { service: "Insurance Claim Dispute", price: "$2,000.00" }
-    ]
+    const services: { service: string; price: string; timeEstimate: string }[] = [
+        { service: "Legal Consultation", price: "FREE", timeEstimate: "30-60 mins" },
+        { service: "Case Settlement", price: "20-40%", timeEstimate: "3-12 months" },
+        { service: "Legal Research and Filing", price: "$2,500.00", timeEstimate: "2-4 weeks" },
+        { service: "Divorce Filing", price: "$1,800.00", timeEstimate: "3-6 months" },
+        { service: "Child Custody Representation", price: "$3,000.00", timeEstimate: "6-12 months" },
+        { service: "Personal Injury Case Representation", price: "30-40%", timeEstimate: "6-24 months" },
+        { service: "Insurance Claim Dispute", price: "$2,000.00", timeEstimate: "2-6 months" }
+    ];
     
+    const faqs: { question: string, answer: string }[] = [
+        { question: "Do you offer free consultations?", answer: "Yes, we offer free initial legal consultations." },
+        { question: "How do I schedule an appointment?", answer: "You can schedule an appointment by calling our office or filling out the contact form on our website." },
+        { question: "What percentage do you take for personal injury cases?", answer: "We take 30-40% of the settlement, depending on the case." },
+        { question: "How long does a divorce case take?", answer: "The timeline varies, but most cases take between 3 to 12 months, depending on complexity." },
+        { question: "What should I bring to my first consultation?", answer: "Please bring any relevant documents, such as contracts, police reports, medical records, or court filings." }
+    ];
 
   return (
     <div className="w-11/12 mx-auto">
@@ -72,15 +78,29 @@ export default function Page() {
             <div className="mx-auto text-center text-3xl font-bold">
                 Pricing
             </div>
-            <div className="mx-auto w-4/6 text-lg">
+            <div className="mx-auto w-5/6 text-lg">
                 {
-                    services.map((service: {service: string, price: string}) => {
+                    services.map((service: {service: string, price: string, timeEstimate: string}) => {
                         return (
                         <div key={service.service} className="flex flex-row justify-between my-2 mx-auto">
-                            <div className="w-9/12 bg-lgray py-3 px-2">{service.service}</div>
+                            <div className="w-7/12 bg-lgray py-3 px-4">{service.service}</div>
+                            <div className="w-2/12 bg-lgray py-3 px-2 text-center">{service.timeEstimate}</div>
                             <div className="w-1/6 bg-lgray py-3 px-2 text-left">{service.price}</div>
                         </div>)
                     })
+                }
+            </div>
+            <div className="mx-auto text-center text-3xl font-bold mt-10">
+                FAQ
+            </div>
+            <div className="mx-auto w-4/6 text-lg">
+                {
+                    faqs.map((faq, index) => (
+                        <div key={index} className="my-4 py-2">
+                            <div className="font-semibold">{faq.question}</div>
+                            <div>{faq.answer}</div>
+                        </div>
+                    ))
                 }
             </div>
         </div>

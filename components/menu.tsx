@@ -21,7 +21,7 @@ export default function Menu({currentLink = ""}: {currentLink? : string }) {
     <div className="flex justify-between w-full h-16 bg-dblue">
         <Link className='flex flex-row my-auto pl-3 py-1 max-h-full' href="/">
            <Image
-            src="/logo.png"
+            src="/CEG3525-Project1/logo.png"
             width="60"
             height="60"
             alt="logo"

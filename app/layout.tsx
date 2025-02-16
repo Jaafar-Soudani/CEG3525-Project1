@@ -19,7 +19,7 @@ export default function RootLayout({
   }, [pathname]);  return (
     <html lang="en">
       <head>
-        
+        <title>Gee & Gee LLP</title>
         <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"/>
       </head>
       <body>
